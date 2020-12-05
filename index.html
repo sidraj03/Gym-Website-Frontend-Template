@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidharth Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        /*CSS reset*/
+        body{
+            margin:0px;
+            padding:0px;
+            background: url("images/img2.jpg");
+            background-size: 1500px 1000px;
+            background-repeat: no-repeat;
+        }
+        .left{
+           display: inline-block;
+           /* border:2px solid red; */
+           position: absolute;
+           left:34px;
+           top:20px;
+           color: white;
+        }
+        .left div{
+            text-align: center;
+        }
+        .left img{
+             width: 100px;
+        }
+        .mid{
+            display: block;
+            width: 45%;
+            margin:20px auto;
+            /* border:2px solid green; */
+        }
+        .right{
+            position: absolute;
+            right:34px;
+            top:20px;
+            display:inline-block;
+            /* border:2px solid yellow ; */
+            color: white;
+        }
+        .navbar{
+           display: inline-block;
+        }
+        .navbar li{
+           display:inline-block;
+           font-size:24px;
+        }
+        .navbar li a{
+            color:white;
+            text-decoration:none;
+            padding: 34px 18px;
+        }
+        .navbar li a:hover, .navbar li a.active{
+            text-decoration: underline;
+            color:grey;
+        }
+
+    </style>
+    </head>
+<body>
+   <header class="header">
+    <!-- left box for logo  -->
+    <div class="left">
+        <img src="images/dumbellwhite.png">
+        <div>Sidharth Fitness</div>
+     </div>
+     <!-- mid box for navbar -->
+     <div class="mid">
+        <ul class="navbar">
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+     </div>
+
+     <!-- right box for buttons -->
+     <div class="right">
+        <!-- I am right -->
+     </div>
+
+
+   </header>
+</body>
+</html>
