@@ -1,89 +1,179 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sidharth Fitness</title>
     <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap" rel="stylesheet">
     <style>
         /*CSS reset*/
-        body{
-            margin:0px;
-            padding:0px;
+        body {
+            margin: 0px;
+            padding: 0px;
             background: url("images/img2.jpg");
-            background-size: 1500px 1000px;
+            background-size: 1444px 1004px;
             background-repeat: no-repeat;
+            font-family: 'Open Sans', sans-serif;
         }
-        .left{
-           display: inline-block;
-           /* border:2px solid red; */
-           position: absolute;
-           left:34px;
-           top:20px;
-           color: white;
-        }
-        .left div{
-            text-align: center;
-        }
-        .left img{
-             width: 100px;
-        }
-        .mid{
-            display: block;
-            width: 45%;
-            margin:20px auto;
-            /* border:2px solid green; */
-        }
-        .right{
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid red; */
             position: absolute;
-            right:34px;
-            top:20px;
-            display:inline-block;
-            /* border:2px solid yellow ; */
+            left: 34px;
+            top: 20px;
             color: white;
         }
-        .navbar{
-           display: inline-block;
+
+        .left div {
+            text-align: center;
+            font-size: 15px;
         }
-        .navbar li{
-           display:inline-block;
-           font-size:24px;
+
+        .left img {
+            width: 68px;
+            margin-left: 24px;
+            margin-right: auto
         }
-        .navbar li a{
-            color:white;
-            text-decoration:none;
+
+        .mid {
+            display: block;
+            width: 45%;
+            margin: 20px auto;
+            /* border: 2px solid green; */
+        }
+
+        .right {
+            position: absolute;
+            right: 34px;
+            top: 20px;
+            display: inline-block;
+            /* border: 2px solid yellow; */
+            color: white;
+        }
+
+        .navbar {
+            display: inline-block;
+        }
+
+        .navbar li {
+            display: inline-block;
+            font-size: 24px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
             padding: 34px 18px;
+            font-size: 20px;
         }
-        .navbar li a:hover, .navbar li a.active{
+
+        .navbar li a:hover,
+        .navbar li a.active {
             text-decoration: underline;
-            color:grey;
+            color: rgb(85, 83, 83);
         }
 
+        .btn {
+            margin: 15px 9px;
+            padding: 6px 10px;
+            background-color: black;
+            color: white;
+            border: 2px solid grey;
+            border-radius: 10px;
+            cursor: pointer;
+            font-family: 'Open Sans', sans-serif;
+        }
+
+        .btn:hover {
+            background-color: rgb(66, 65, 65);
+        }
+
+        .container {
+            color: white;
+            border: 2px solid white;
+            margin: 90px 88px;
+            padding: 50px 28px;
+            width: 33%;
+            border-radius: 20px;
+        }
+
+        .container h1 {
+            text-align: center;
+            font-family: 'Open Sans', sans-serif;
+            font-size: 21px;
+            padding: 5px;
+        }
+
+        .form-group input {
+            text-align: center;
+            display: block;
+            width: 343px;
+            padding: 6px;
+            border: 2px solid black;
+            margin: 6px auto;
+            font-size: 17px;
+            font-family: 'Open Sans', sans-serif;
+            border-radius: 8px;
+        }
+
+        .container .btn {
+            display: block;
+            width: 350px;
+            margin: 20px auto;
+            font-size: 15px;
+        }
     </style>
-    </head>
+</head>
+
 <body>
-   <header class="header">
-    <!-- left box for logo  -->
-    <div class="left">
-        <img src="images/dumbellwhite.png">
-        <div>Sidharth Fitness</div>
-     </div>
-     <!-- mid box for navbar -->
-     <div class="mid">
-        <ul class="navbar">
-            <li><a href="#" class="active">Home</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Fitness Calculator</a></li>
-            <li><a href="#">Contact Us</a></li>
-        </ul>
-     </div>
+    <header class="header">
+        <!-- left box for logo  -->
+        <div class="left">
+            <img src="images/dumbellwhite.png">
+            <div>Sidharth Fitness</div>
+        </div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </div>
 
-     <!-- right box for buttons -->
-     <div class="right">
-        <!-- I am right -->
-     </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
 
 
-   </header>
+    </header>
+
+    <div class="container">
+        <h1>Join The Best Gym Of Chandigarh Now</h1>
+        <form action="noaction">
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" name="" placeholder="Enter Your Name">
+            </div>
+            <button class="btn">Submit</button>
+        </form>
+    </div>
+
 </body>
+
 </html>
